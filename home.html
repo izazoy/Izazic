@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Izazic</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="above">
+      <div id="leftBar">
+        <div id="logo">
+          <a href="home.html"><img src="./assets/img/logo/logo.png" alt="" /></a>
+        </div>
+
+        <div id="nav">
+          <ul class="main">
+            <li style="filter: brightness(100%)">
+              <i class="fa-solid fa-house"></i>Trang chủ
+            </li>
+
+            <div class="box">
+              <input type="checkbox" id="check" />
+              <div class="search-box">
+                <input type="text" placeholder="tìm kiếm..." />
+                <label for="check" class="iconfind">
+                  <li>
+                    <i class="fa-solid fa-magnifying-glass"><p></p></i>
+                  </li>
+                </label>
+              </div>
+            </div>
+           <a href="thuvien.html"> <li><i class="thuvien fa-solid fa-compact-disc"></i></i>Thư viện</li></a>
+          </ul>
+
+          <ul class="like">
+            <li>Tạo playlist</li>
+            <li>Bài hát đã thích</li>
+          </ul>
+
+          <ul class="ablum">
+            <a href="novelbright.html"><li>Novel Bright</li></a>
+            <a href="kenshi.html"><li>Kenshi Yonezu</li></a>
+            <a href="bluearchive.html"><li>Blue Archive</li></a>
+          </ul>
+        </div>
+      </div>
+      <div id="container">
+        <div class="top-bar">
+          <div class="profile">
+            <img src="./assets/img/logo/avatar.png" alt="" />
+            <p>Izazoy</p>
+            <div class="move">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="sub-nav">
+              <li>
+                Tài khoản
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  style="margin-left: 60%"
+                ></i>
+              </li>
+              <li onclick="profileme()">Hồ sơ</li>
+              <li onclick="logout()">Đăng xuất</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <p style="margin-bottom: 20px; width: 500px">WELCOME</p>
+          <ul>
+            <li>
+              <div class="album-song">
+                <div class="inner" onclick="location.href='novelbright.html';">
+                  <img
+                    src="./assets/img/album/novelbright/novelbright.jpg"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>NOVEL BRIGHT</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="Novel"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="album-song">
+                <div class="inner" onclick="location.href='kenshi.html';">
+                  <img
+                    src="./assets/img/album/kenshi/kenshiava.jpg"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>KENSHI YONEZU</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="kenshi"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="album-song">
+                <div class="inner" onclick="location.href='bluearchive.html';">
+                  <img
+                    src="./assets/img/album/BlueArchive/BlueArchiveIcon.png"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>BLUE ARCHIVE</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="BAr"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="album-song">
+                <div class="inner" onclick="location.href='septung.html';">
+                  <img
+                    src="./assets/img/album/sontung/iconalbumtrue.jpg"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>SƠN TÙNG M-TP</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="tung"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="album-song">
+                <div class="inner">
+                  <img
+                    src="./assets/img/album/rokudenashi/mainicon.jpg"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>ROKUDENASHI</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="rokudenashi"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="album-song">
+                <div class="inner">
+                  <img
+                    src="./assets/img/album/chainsmokers/mainico.jpg"
+                    alt=""
+                    class="anh"
+                  />
+                  <p>THE CHAINSMOKERS</p>
+                </div>
+                <img
+                  src="./assets/img/furniture/bluebtn.png"
+                  alt=""
+                  class="nut"
+                  id="chain"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="title">Recently played</p>
+        <div class="music-album">
+          <ul>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/ScriptHOF.jpg" alt="" />
+                <p class="name">Hall of fame</p>
+                <p class="date">The script - 2012</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/YamaiLS.jpg" alt="" />
+                <p class="name">Last song</p>
+                <p class="date">Yamai - 2011</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/AOT.jpg" alt="" />
+                <p class="name">Akuma no ko</p>
+                <p class="date">Ai Higuchi - 2022</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/TsukuyomiLife.jpg" alt="" />
+                <p class="name">If there is not such a life</p>
+                <p class="date">Tsukuyomi - 2021</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img
+                  src="./assets/img/album/Others/dangerous-cute-hacker-rein.jpg"
+                  alt=""
+                />
+                <p class="name">Dangerous Cute Hacker</p>
+                <p class="date">Luna - 2019</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/Gurenge.jpg" alt="" />
+                <p class="name">Gurenge</p>
+                <p class="date">Lisa - 2020</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Others/emaraldsword.jpg" alt="" />
+                <p class="name">Emerald Sword</p>
+                <p class="date">Rhapsody of Fire - 1998</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile" id="hof">
+                <img src="./assets/img/album/Others/aonatsu.jpg" alt="" />
+                <p class="name">Kaigansen</p>
+                <p class="date">Kotorii Yuuka - 2019</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile" id="hof">
+                <img src="./assets/img/album/Others/seisou.jpg" alt="" />
+                <p class="name">Seisou no Wadachi</p>
+                <p class="date">Maru - 2018</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile" id="hof">
+                <img src="./assets/img/album/Others/awake.jpg" alt="" />
+                <p class="name">Awake And Alive</p>
+                <p class="date">Skillet - 2010</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p class="title">Artists</p>
+        <div class="music-album">
+          <ul>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/ogura_yui.jpg" alt="" />
+                <p class="name">Ogura Yui</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img
+                  src="./assets/img/album/Artists/Tsukuyomi.jpg"
+                  alt=""
+                />
+                <p class="name">Tsukuyomi</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/dazbee.jpg" alt="" />
+                <p class="name">DAZBEE</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/taylor-swift.jpg" alt="" />
+                <p class="name">Taylor Swift</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/miu-le.jpg" alt="" />
+                <p class="name">Miu Lê</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/Son-Tung-Mtp.jpg" alt="" />
+                <p class="name">Sơn Tùng MTP</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/SHAUN.jpg" alt="" />
+                <p class="name">SHAUN</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/denjpg.jpg" alt="" />
+                <p class="name">Den</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/Ed_Sheeran.jpg" alt="" />
+                <p class="name">Ed Sheeran</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+            <li>
+              <div class="song-profile">
+                <img src="./assets/img/album/Artists/lambsey.jpg" alt="" />
+                <p class="name">Lambsey</p>
+                <p class="date">Artist</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box"></div>
+      </div>
+      <div id="music">
+        <div class="left">
+          <img src="" alt="" class="songImage" style="opacity: 0" />
+          <ul>
+            <li style="font-size: 15px" class="songName"></li>
+            <li
+              style="font-size: 10px; margin-top: 5px; color: lightgray"
+              class="artistName"
+            ></li>
+          </ul>
+          <img
+            src="./assets/img/furniture/favoriteheart.png"
+            class="heart"
+            alt=""
+            style="opacity: 0"
+          />
+        </div>
+
+        <div class="center">
+          <div class="controls">
+            <div class="prev">
+              <div class="prev-inner">
+                <i class="fa-solid fa-backward-step" class="prev"></i>
+              </div>
+            </div>
+            <div class="play">
+              <div class="play-inner">
+                <i class="fa-solid fa-play" id="play-icon"></i>
+              </div>
+            </div>
+            <div class="next">
+              <div class="next-inner">
+                <i class="fa-solid fa-forward-step" class="next"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="times">
+            <div class="duration">0:00</div>
+            <input type="range" name="range" id="range" class="range" />
+            <div class="remaining">3:01</div>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="./assets/img/furniture/menu.png" alt="" />
+          <img src="./assets/img/furniture/remote.PNG" alt="" />
+          <img
+            src="./assets/img/furniture/volume-big.PNG"
+            alt=""
+            class="volume"
+          />
+          <span id="volumeBar"></span>
+        </div>
+
+        <audio id="audio" controls>
+          <source src="" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/database.js"></script>
+  <script src="./assets/js/design.js"></script>
+  <script>
+    var profile = document.querySelector("#container .top-bar .profile");
+    var detail = document.querySelector(
+      "#container .top-bar .profile .sub-nav"
+    );
+    var move = document.querySelector("#container .top-bar .profile .move");
+
+    let flagOpen = 1;
+
+    profile.addEventListener("click", openClose);
+
+    function openClose() {
+      if (flagOpen == 1) {
+        detail.style.display = "unset";
+        flagOpen = 0;
+        move.innerHTML = `
+        <i class="fa-solid fa-chevron-up"></i>
+        `;
+      } else {
+        detail.style.display = "none";
+        flagOpen = 1;
+        move.innerHTML = `
+        <i class="fa-solid fa-chevron-down"></i>
+        `;
+      }
+    }
+
+    function logout() {
+        window.location.assign("index.html");
+      }
+    function profileme(){
+      window.location.assign("profile.html");
+    }
+
+    let flag1 = 0;
+    let flag2 = 0;
+    let flag3 = 0;
+    let flag4 = 0;
+    let flag5 = 0;
+    let flag6 = 0;
+
+    var Novel = document.getElementById("Novel");
+    Novel.addEventListener("click", NovelAlbum);
+
+    function NovelAlbum() {
+      if (flag1 == 0) {
+        tempSong = 0;
+        active();
+        flag1 = 1;
+        flag2 = 0;
+        flag3 = 0;
+        flag4 = 0;
+        flag5 = 0;
+        flag6 = 0;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          Novel.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        } else {
+          Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+
+    var kenshi = document.getElementById("kenshi");
+    kenshi.addEventListener("click", kenshiAlbum);
+
+    function kenshiAlbum() {
+      if (flag2 == 0) {
+        tempSong = 3;
+        active();
+        flag1 = 0;
+        flag2 = 1;
+        flag3 = 0;
+        flag4 = 0;
+        flag5 = 0;
+        flag6 = 0;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          kenshi.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        } else {
+          kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+
+    var BAr = document.getElementById("BAr");
+    BAr.addEventListener("click", BArAlbum);
+
+    function BArAlbum() {
+      if (flag3 == 0) {
+        tempSong = 6;
+        active();
+        flag1 = 0;
+        flag2 = 0;
+        flag3 = 1;
+        flag4 = 0;
+        flag5 = 0;
+        flag6 = 0;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          BAr.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        } else {
+          BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+    var tung = document.getElementById("tung");
+    tung.addEventListener("click", tungAlbum);
+
+    function tungAlbum() {
+      if (flag4 == 0) {
+        tempSong = 9;
+        active();
+        flag1 = 0;
+        flag2 = 0;
+        flag3 = 0;
+        flag4 = 1;
+        flag5 = 0;
+        flag6 = 0;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          tung.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        } else {
+          tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+
+    var rokudenashi = document.getElementById("rokudenashi");
+    rokudenashi.addEventListener("click", rokudenashiAlbum);
+
+    function rokudenashiAlbum() {
+      if (flag5 == 0) {
+        tempSong = 12;
+        active();
+        flag1 = 0;
+        flag2 = 0;
+        flag3 = 0;
+        flag4 = 0;
+        flag5 = 1;
+        flag6 = 0;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          rokudenashi.setAttribute(
+            "src",
+            "./assets/img/furniture/bluepause.png"
+          );
+        } else {
+          rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+
+    var chain = document.getElementById("chain");
+    chain.addEventListener("click", chainAlbum);
+
+    function chainAlbum() {
+      if (flag6 == 0) {
+        tempSong = 15;
+        active();
+        flag1 = 0;
+        flag2 = 0;
+        flag3 = 0;
+        flag4 = 0;
+        flag5 = 0;
+        flag6 = 1;
+        playMusic();
+        Novel.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        kenshi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        BAr.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        tung.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        rokudenashi.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        chain.setAttribute("src", "./assets/img/furniture/bluepause.png");
+      } else {
+        playPause();
+        if (flagGreenButton) {
+          chain.setAttribute("src", "./assets/img/furniture/bluepause.png");
+        } else {
+          chain.setAttribute("src", "./assets/img/furniture/bluebtn.png");
+        }
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,168 @@
+html {
+  background: #212124;
+}
+
+#container {
+  background-image: none;
+}
+
+#information {
+  width: 100%;
+  height: 540px;
+  background-position-y: -200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+}
+
+#information ul {
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+#information ul li {
+  display: inline;
+  line-height: 30px;
+}
+
+#information p {
+  font-size: 15px;
+  color: white;
+  font-weight: normal;
+  font-family: gotham;
+  position: absolute;
+}
+#information img {
+  position: absolute;
+  bottom: 10px;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+}
+#information h1 {
+  margin-top: 300px;
+  line-height: 340px;
+  font-size: 90px;
+  position: absolute;
+  left: 250px;
+}
+
+#playlist {
+  width: 100%;
+  background: #212124;
+}
+
+.content {
+  margin-left: 50px;
+}
+
+#playlist #icon {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#playlist #icon .playButton {
+  width: 100px;
+  height: 100px;
+}
+
+#playlist #icon .playButton img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+#playlist #icon #followOtp {
+  padding: 15px 50px;
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 13px;
+  filter: brightness(50%);
+}
+
+#playlist #icon #followOtp:hover {
+  filter: brightness(100%);
+}
+
+#popular {
+  width: 95%;
+  background: #212124;
+}
+#popular .song img {
+  width: 50px;
+}
+#popular .song {
+  color: gray;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+}
+
+#popular .song .left {
+  width: 70%;
+  height: 100%;
+}
+
+#popular .song .right {
+  width: 20%;
+  height: 100%;
+  justify-content: right;
+}
+
+#popular .song .right p {
+  margin-left: 300px;
+}
+
+#popular .song .left img {
+  height: 100%;
+  object-fit: fill;
+}
+
+#popular .song p {
+  margin: 10px;
+}
+
+#popular .song:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.introduction {
+  position: relative;
+}
+
+h2 {
+  margin: 50px;
+}
+
+.introduction .layer {
+  width: 100%;
+  height: 560px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.862),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 10;
+  position: absolute;
+}
+
+.introduction .frame {
+  width: 700px;
+  height: 500px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.introduction .frame p {
+  width: 500px;
+  position: relative;
+  bottom: -350px;
+  z-index: 10;
+  margin-left: 50px;
+  margin-top: 10px;
+}

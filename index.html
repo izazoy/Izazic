@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Izazic</title>
+  </head>
+  <body>
+    <div class="wrapper">
+   
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" id="user" required />
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="password" id="pass" required />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label> <input type="checkbox" />Ghi nhớ </label>
+          <a href="#">Quên mật khẩu</a>
+        </div>
+
+        <button type="submit" class="btn" onclick="auth()">Login</button>
+
+        <div class="register-link">
+          <p>Không có tài khoản <a href="#">Đăng kí</a></p>
+        </div>
+
+        <div class="guide-box">
+          <p>
+            Hiện thị tài khoản và mật khẩu test
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </p>
+        </div>
+        <div class="hide">tk: izazoy ; mk: 123</div>
+      </form>
+    </div>
+  </body>
+  <script>
+    function auth() {
+      var user = document.getElementById("user").value;
+      var pass = document.getElementById("pass").value;
+      if (user == "izazoy" && pass == "123") {
+        window.location.assign("home.html");
+        alert("Đăng nhập thành công");
+      } else {
+        alert("Sai tài khoản hoặc mật khẩu");
+        return;
+      }
+    }
+  </script>
+</html>

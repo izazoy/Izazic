@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izazic</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo/logo.png">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/artist.css">
+    <style>
+        #information{
+        background-image: url(./assets/img/album/sontung/mainbg.jpg);
+        }
+        .introduction .frame{
+        background: url(./assets/img/album/sontung/footer.jpg);
+        background-size: cover;
+        background-position: 0px -50px;
+        background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="above">
+        <div id="leftBar">
+            <div id="logo">
+                <a href="home.html"><img src="./assets/img/logo/logo.png" alt="" /></a>
+            </div>
+    
+            <div id="nav">
+                <ul class="main" style="cursor: not-allowed;">
+                    <a href="home.html"><li><i class="fa-solid fa-house"></i>Trang chủ</li></a>
+                </li>
+
+                <div class="box">
+                  <input type="checkbox" id="check" />
+                  <div class="search-box">
+                    <input type="text" placeholder="tìm kiếm..." />
+                    <label for="check" class="iconfind">
+                      <li>
+                        <i class="fa-solid fa-magnifying-glass"><p></p></i>
+                      </li>
+                    </label>
+                  </div>
+                </div>
+                <a href="thuvien.html"> <li><i class="thuvien fa-solid fa-compact-disc"></i></i>Thư viện</li></a>
+                </ul>
+        
+                <ul class="like" style="cursor: not-allowed;">
+                    <li>Tạo playlist</li>
+                    <li>Bài hát đã thích</li>
+                </ul>
+    
+                <ul class="ablum">
+                    <a href="novelbright.html"><li>Novel Bright</li></a>
+                    <a href="kenshi.html"><li>Kenshi Yonezu</li></a>
+                    <a href="bluearchive.html"><li>Blue Archive</li></a>
+                </ul>
+            </div>
+        </div> 
+    
+        <div id="container">
+
+            <div id="information">
+                <h3>Sơn Tùng M-TP</h3>
+            </div>
+            
+            <div id="playlist">
+                <div class="content">
+                    <div class="box"></div>
+                    <div id="icon">
+                        <div class="playButton">
+                            <img src="./assets/img/furniture/bluebtn.png" alt="" id="tung">
+                        </div>
+                        <div id="followOtp">Theo dõi</div>
+                    </div>
+    
+                    <div id="popular">
+                        <h2 style="margin-left:0px">Phổ biến</h2>
+
+                        <div class="song">
+                           <div class="left">
+                            <p>1</p>
+                            <img src="./assets/img/album/sontung/noinay.jpg" alt="">
+                            <p>Nơi Này Có Anh</p>
+                           </div>
+                           <div class="right">
+                            <p>16,004,310</p>
+                            <p>4:20</p>
+                           </div>
+                        </div>
+
+                        <div class="song">
+                            <div class="left">
+                             <p>2</p>
+                             <img src="./assets/img/album/sontung/lactroi.jpg" alt="">
+                             <p>Lạc Trôi</p>
+                            </div>
+                            <div class="right">
+                             <p>15.343.533</p>
+                             <p>4:32</p>
+                            </div>
+                         </div>
+                       
+                        <div class="song">
+                            <div class="left">
+                             <p>3</p>
+                             <img src="./assets/img/album/sontung/kothuoc.jpg" alt="">
+                             <p>Chúng ta không thuộc về nhau</p>
+                            </div>
+                            <div class="right">
+                             <p>10,772,237</p>
+                             <p>3:53</p>
+                            </div>
+                         </div>
+                                                  
+                        
+                </div>
+
+            </div>
+
+            <div class="introduction">
+                <h2>Giới thiệu</h3>
+                <div class="layer"></div>
+                <div class="frame">
+                    <p style="font-weight: bold;">1,244,704 người nghe hàng tháng</p>
+                    <p>Nguyễn Thanh Tùng, sinh năm 1994, nghệ danh Sơn Tùng M-TP, là một ca sĩ, nhạc sĩ, nhà sản xuất và diễn viên người Việt Nam. Anh không chỉ được biết đến là một trong những nghệ sĩ Việt thành công nhất, được mệnh danh là “Hoàng tử V-pop” mà còn là Chủ tịch của 3 công ty tự thành lập: M-TP Entertainment, M-TP Talent và M-TP & Friends</p>
+                </div>
+                <div class="box"></div>
+            </div>
+
+
+
+        </div>
+
+        
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+    <div id="music">
+        <div class="left">
+            <img src="" alt="" class="songImage" style="opacity: 0;">
+            <ul>
+                <li style="font-size: 15px;" class="songName"></li>
+                <li style="font-size: 10px;margin-top: 5px;color: lightgray;" class="artistName"></li>
+            </ul>
+            <img src="./assets/img/furniture/favoriteheart.png" class="heart" alt="" style="opacity: 0;">
+        </div>
+        
+        <div class="center">
+
+            <div class="controls">
+                
+                <div class="prev">
+                    <div class="prev-inner">
+                        <i class="fa-solid fa-backward-step" class="prev"></i>
+                    </div>
+                </div>
+                <div class="play">
+                    <div class="play-inner">
+                        <i class="fa-solid fa-play" id="play-icon"></i>
+                    </div>
+                </div>
+                <div class="next">
+                    <div class="next-inner">
+                        <i class="fa-solid fa-forward-step" class="next"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="times">
+                <div class="duration">0:00</div>
+                <input type="range" name="range" id="range" class="range">
+                <div class="remaining">3:01</div>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="./assets/img/furniture/menu.png" alt="">
+            <img src="./assets/img/furniture/remote.PNG" alt="">
+            <img src="./assets/img/furniture/volume-big.PNG" alt="" class="volume">
+            <span id="volumeBar"></span>
+        </div>
+
+        <audio id="audio" controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/database.js"></script>
+<script src="./assets/js/design.js"></script>
+<script>
+
+var tung = document.getElementById("tung");
+tung.addEventListener("click",tungAlbum);
+
+let flag4 = 0;
+let flagGreenButton = 0;
+function tungAlbum(){
+    if (flag4 == 0){
+        tempSong = 9;
+        active();
+        flag4 = 1;
+        playPause();
+        tung.setAttribute("src","./assets/img/furniture/bluepause.png");
+    }
+    else {
+        playPause();
+        if (flagGreenButton){
+            tung.setAttribute("src","./assets/img/furniture/bluepause.png");
+        }
+        else {
+            tung.setAttribute("src","./assets/img/furniture/bluebtn.png");
+        }
+    }
+}
+
+var followButton = document.getElementById("followOtp")
+
+followButton.addEventListener("click",changefollowButtonColor);
+
+let flagfollowButton = 1;
+
+function followButtonActive(){
+    followButton.textContent = "Đang theo dõi";
+    followButton.style.filter = "brightness(100%)";
+    flagfollowButton=0;
+}
+
+function followButtonDisable(){
+    followButton.textContent = "Theo dõi";
+    followButton.style.filter = "brightness(50%)";
+    flagfollowButton=1;
+}
+
+function changefollowButtonColor(){
+    if (flagfollowButton)
+        followButtonActive();
+    else
+        followButtonDisable();
+    
+}
+
+
+</script>
+</html>
